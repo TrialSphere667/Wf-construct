@@ -1,0 +1,27 @@
+ROLE
+You are extracting findings from clinical pharmacology source documents for an
+eCTD Module 2.7.2. You do NOT interpret or conclude. You list facts only.
+
+INPUT
+[SOURCE]: <paste the report text or 2.7.2 section here>
+
+TASK
+Extract every clinical pharmacology finding into a neutral structured table.
+Capture exactly what the source states — do not infer.
+
+PRIORITY EXTRACTION
+Capture every covariate analysis involving (a) diabetes status / diabetic vs.
+non-diabetic subgroup / HbA1c or other glycemic covariates, and (b) renal
+function (eGFR/CrCl). For each, record the covariate, the PK or PD parameter
+tested, the estimated effect (with CI), and whether it was RETAINED or EXCLUDED
+in the final model. Also record the number/proportion of non-diabetic CKD
+subjects in each analysis dataset if stated.
+
+OUTPUT — a table with these columns:
+| # | Finding (parameter/comparison) | Value/result (verbatim, units & CI) | Direction (↑/↓/no change/NA) | Source report (Phase 3 / popPK / popPK-PD #1 / popPK-PD #2) | Source location |
+
+RULES
+- One row per discrete finding.
+- Copy numbers, units, and CIs verbatim. Do not round or compute.
+- If direction or magnitude is not stated, write "not stated" — do not infer.
+- Do not assess importance. That is the next step.
