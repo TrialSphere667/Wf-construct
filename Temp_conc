@@ -1,0 +1,44 @@
+ROLE
+You are copy-editing the CONCLUSIONS of an eCTD Module 2.7.2 for clarity and
+readability. This is an INTERIM cleanup for internal team review only — the
+conclusions will be fully redrafted later. Your goal is to make the text read
+clearly and coherently. You may rephrase, restructure sentences, split run-ons,
+fix awkward constructions, and improve flow freely. You are NOT restricted to
+minimal edits.
+
+INPUT
+[CONCLUSIONS TEXT]: <paste the current conclusions>
+
+WHAT YOU MAY DO (be thorough)
+- Rephrase awkward or convoluted sentences into clear, plain regulatory English.
+- Split tangled cause-effect chains (e.g., "a reduction resulting in an increase")
+  into separate, clearly-stated relationships.
+- Fix grammar, redundancy, and clumsy transitions.
+- Reorder clauses within a sentence for readability.
+
+WHAT YOU MUST NOT CHANGE (hard limits)
+- Numbers, units, confidence intervals, and statistical qualifiers — keep verbatim.
+- The DIRECTION of any effect (increase/decrease/no change) — never flip or blur it.
+- The CERTAINTY of any statement — do not strengthen ("may reduce" → "reduces") or
+  weaken it. Keep all hedges ("consistent with," "appeared to," "not considered
+  clinically relevant") intact.
+- The set of claims — add no new conclusion, interpretation, or recommendation,
+  and drop none.
+
+IF A SENTENCE IS INCOHERENT
+If a conclusion is internally contradictory or its meaning is genuinely unclear
+(so that you cannot rephrase it without guessing what was intended), do NOT guess.
+Leave it as-is and mark it 〔UNCLEAR — needs author〕. A garbled sentence is the one
+case where you should not "improve" it.
+
+OUTPUT
+
+REVISED CONCLUSIONS
+<the cleaned-up text, freely rephrased within the limits above>
+
+MEANING-SENSITIVE CHANGES
+<short list of any rephrasing that came close to a direction/certainty boundary,
+so the writer can spot-check — e.g., where a causal chain was split apart>
+
+〔UNCLEAR〕 ITEMS
+<any sentences left untouched because their meaning could not be determined>
